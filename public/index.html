@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,29 +16,396 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>React App</title>
+    <link rel="stylesheet" href="style.css"/>
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__wrapper">
+            <div class="logo"><h1>Pizza<span class="highlight">Day</span></h1></div>
+            <div class="navigation">
+              <ul class="nav__menu">
+                <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
+                <li class="nav__item"><a href="#Menu" class="nav__link">Menu</a></li>
+                <li class="nav__item"><a href="#About" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#Blog" class="nav__link">Blog</a></li>
+              </ul>
+            </div>
+  
+            <span class="mobile__menu"><i class="ri-menu-line"></i></span>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!--main start----->
+    <main>
+      <!--hero section-->
+      <section id="home" class="section">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__content">
+              <h2 class="hero__title">Today's Special</h2>
+              <h2 class="highlight">Italian Pizza</h2>
+              <p>Traditional favorites made with mouth-watering cheeses and a generous amount of tasty toppings.</p>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+                <div class="hero__btns">
+                  <button class="view__more-btn">View menu</button>
+                  <span class="play__btn"><i class="ri-play-fill"></i></span>
+
+                </div>
+            </div>
+            <div class="hero__img"></div>
+          <img src="/images/hero.jpg" alt="hero-img">
+
+          </div>
+        </div>
+      </section>
+
+      <!--hero section start-->
+
+      <script src="App.js"></script>
+      <!--popular dishes section start-->
+      <section class="section">
+        <div class="container">
+          <div class="dishes__section-top">
+            <h2>Popular Dishes</h2>
+          </div>
+
+          <div class="dishes__wrapper">
+            <div class="dish__item">
+              <div class="dish__img">
+                <img src="/images/dishes-01.png" alt="">
+              </div>
+
+              <div class="dish__content">
+                <h3>Papporoni Pizza</h3>
+                <div class="rating">
+                  <span><i class="ri-star-s-fill"></i></span>
+                  <span><i class="ri-star-s-fill"></i></span>
+                  <span><i class="ri-star-s-fill"></i></span>
+                  <span><i class="ri-star-s-fill"></i></span>
+                  <span><i class="ri-star-half-s-line"></i></span>
+                </div>
+              
+
+              <div class="dish__content-bottom">
+                <span class="dish__price">$23.99</span>
+                <span class="add__to-cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </span>
+
+
+              </div>
+
+              
+            </div>
+          </div>
+
+          <div class="dish__item">
+            <div class="dish__img">
+              <img src="/images/dishes-02.png" alt="">
+            </div>
+
+            <div class="dish__content">
+              <h3>Pasta</h3>
+              <div class="rating">
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-s-fill"></i></span>
+                <span><i class="ri-star-half-s-line"></i></span>
+              </div>
+            
+
+            <div class="dish__content-bottom">
+              <span class="dish__price">$13.99</span>
+              <span class="add__to-cart">
+                <i class="ri-shopping-cart-line"></i>
+              </span>
+
+
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="dish__item">
+          <div class="dish__img">
+            <img src="/images/dishes-03.png" alt="">
+          </div>
+
+          <div class="dish__content">
+            <h3>Vegetable</h3>
+            <div class="rating">
+              <span><i class="ri-star-s-fill"></i></span>
+              <span><i class="ri-star-s-fill"></i></span>
+              <span><i class="ri-star-s-fill"></i></span>
+              <span><i class="ri-star-s-fill"></i></span>
+              <span><i class="ri-star-half-s-line"></i></span>
+            </div>
+          
+
+          <div class="dish__content-bottom">
+            <span class="dish__price">$29.99</span>
+            <span class="add__to-cart">
+              <i class="ri-shopping-cart-line"></i>
+            </span>
+
+
+          </div>
+
+          
+        </div>
+      </div>
+        </div>
+      </section>
+
+       <!--about us section start-->
+
+       <section class="section" id="About">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__img">
+              <img src="/images/burger.png" alt="">
+            </div>
+            <div class="about__content">
+              <h3>we pride ourselves on making real food from the best
+                ingredients.
+              </h3>
+              <p>Oats, almonds (almond flour), grains, yogurt, cheese, meat are all ingredients are 100% natural.</p>
+
+                 <button class="learn__more"><a href="#">Learn more</a></button>
+            </div>
+          </div>
+        </div>
+       </section>
+        <!--about us section end-->
+        <!--menu section start-->
+        <section class="section" id="Menu">
+          <div class="container">
+            <div class="menu__section-top">
+              <h2>Special Menu For You</h2>
+            </div>
+            <div class="menu__wrapper">
+              <div class="menu__item">
+                <div class="menu__img">
+                  <img src="/images/product-01.png" alt="">
+                </div>
+
+                <h3>American Pasta</h3>
+                <div class="menu__card-bottom">
+                  <div>
+                  <div class="rating">
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-half-s-line"></i></span>
+                  </div>
+                  <span class="dish__price">$29.99</span>
+                  </div>
+        
+                  <span class="add__to-cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </span>
+                  </div>
+                
+
+              </div>
+
+              <div class="menu__item">
+                <div class="menu__img">
+                  <img src="/images/product-02.png" alt="">
+                </div>
+
+                <h3>Quintao Nuts</h3>
+                <div class="menu__card-bottom">
+                  <div>
+                  <div class="rating">
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-half-s-line"></i></span>
+                  </div>
+                  <span class="dish__price">$39.99</span>
+                  </div>
+        
+                  <span class="add__to-cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </span>
+                  </div>
+                
+
+              </div>
+
+              <div class="menu__item">
+                <div class="menu__img">
+                  <img src="/images/product-03.png" alt="">
+                </div>
+
+                <h3>Noodles</h3>
+                <div class="menu__card-bottom">
+                  <div>
+                  <div class="rating">
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-s-fill"></i></span>
+                    <span><i class="ri-star-half-s-line"></i></span>
+                  </div>
+                  <span class="dish__price">$19.99</span>
+                  </div>
+        
+                  <span class="add__to-cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </span>
+                  </div>
+                
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--menu section end-->
+        <!--offer section start-->
+        <section class="section">
+          <div class="container">
+            <div class="offer__wrapper">
+              <div class="offer__content">
+                <h2>Get upto <span class="highlight">50%</span>offer on festival!</h2>
+                <p>family friendly pizza that everyone will love made with Masla,
+                   basically a Malaysian twist to the American pizza base with fluffy dough and chicken marinated in masala</p>
+
+                  <button class="view__more-btn">order Now</button>
+              </div>
+              <div class="offer__img">
+                <img src="/images/offer.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!--offer section end-->
+        <!--blog section start-->
+          <section class="section" id="Blog">
+            <div class="container">
+              <div class="blog__top">
+                <h2>Our Top Recipes</h2>
+              </div>
+
+              <div class="blog__wrapper">
+                <div class="blog__item">
+                  <div class="blog__img">
+                    <img src="/images/recipe-01.jpg" alt="">
+                  </div>
+                  <div class="blog__content">
+                    <h3>Better than takeout same chicken</h3>
+                    <p>I’m always looking for new chicken recipes that are easy and quick to make. This 4-ingredient chicken is definitely a winner!
+                      Give it a try!</p>
+
+                    <a href="#" class="read__more">Read More</a>
+                  </div>
+                </div>
+
+                <div class="blog__item">
+                  <div class="blog__img">
+                    <img src="/images/recipe-02.jpg" alt="">
+                  </div>
+                  <div class="blog__content">
+                    <h3>Better than takeout same chicken</h3>
+                    <p>his is officially the easiest recipe that has ever been posted on the internet.
+                      It only takes five ingredients and twenty minutes to make! </p>
+
+                    <a href="#" class="read__more">Read More</a>
+                  </div>
+                </div>
+
+                <div class="blog__item">
+                  <div class="blog__img">
+                    <img src="/images/recipe-03.jpg" alt="">
+                  </div>
+                  <div class="blog__content">
+                    <h3>Better than takeout same Biriyani</h3>
+                    <p> There are countless ways to make this comforting and aromatic Indian long-grain rice dish.</p>
+
+                    <a href="#" class="read__more">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!--blog section end-->
+   </main>
+   <!--main end-->
+
+   <!--footer start-->
+   <footer class="section footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <div class="logo">
+            <h1>Pizza<span class="highlight">Day</span></h1>
+          </div>
+          <p>Subscribe to our newsletter </p>
+          <div class="subscribe__box">
+            <input type="email" placeholder="Your email"/>
+            <button class="subscribe__btn">Subscribe</button>
+            
+          </div>
+        </div>
+        <div class="footer__box">
+          <h3 class="footer__link-title">Information</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="#about" class="footer__link">About Us</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Events</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Career</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Our Chefs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h3 class="footer__link-title">Services</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="#about" class="footer__link">Online Order</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">24/7 Support</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Pre-reservation</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Foodie Place</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h3 class="footer__link-title">Quick Links</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="#Menu" class="footer__link">Menu</a></li>
+            <li class="footer__menu-item"><a href="#Blog" class="footer__link">Blog</a></li>
+            <li class="footer__menu-item"><a href="#About" class="footer__link">About us</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Offer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h3 class="footer__link-title">Social</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="#" class="footer__link">Facebook</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Instergram</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Linkdin</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">Developed by Ravidu Dilusha.All rights reserved. </p>
+      
+     
+    </div>
+   </footer>
+    
   </body>
 </html>
